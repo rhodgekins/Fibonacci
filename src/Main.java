@@ -3,11 +3,21 @@ public class Main {
 
     public static void main(String[] args)
     {
-        fib(20);
+        if (args.length >= 1)
+        {
+            try {
+                fib(Integer.parseInt(args[0]));
+            } catch (Exception e) {
+                System.out.println("Error, unknown argument - " + args[0]);
+            }
+        }
+        else
+            System.out.println("Error, no argument used");
     }
 
     public static void fib(int n)
     {
+        System.out.println("Showing sequence for " + n + " places");
         int x = 0;
         int y = 1;
         int z;
