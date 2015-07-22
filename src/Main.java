@@ -5,9 +5,11 @@ public class Main {
     {
         if (args.length >= 1)
         {
-            try {
+            try
+            {
                 fib(Integer.parseInt(args[0]));
-            } catch (Exception e) {
+            } catch (Exception e)
+            {
                 System.out.println("Error, unknown argument - " + args[0]);
             }
         }
@@ -23,7 +25,7 @@ public class Main {
         int z;
         System.out.print(y);
 
-        for (int i = 2; i < n+1; i++)
+        for (int i = 2; i < n + 1; i++)
         {
             z = (x + y);
             x = y;
